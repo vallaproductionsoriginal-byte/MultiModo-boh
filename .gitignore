@@ -1,0 +1,8 @@
+*
+!.gitignore
+!README.md
+!LICENSE
+!THIRD_PARTY_NOTICES.md
+!assets/
+assets/*
+!assets/MultiModo-boh-interface.png
