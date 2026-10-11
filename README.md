@@ -1,6 +1,7 @@
 # MultiModo-boh
 
-Plugin **VST3 gratuito per macOS 11 o successivo su Apple Silicon**.
+Plugin di **Valla Productions**, versione **1.0.1**.
+**VST3 e AU gratuiti per macOS 11 o successivo su Apple Silicon**.
 Chorus, delay multitap e diffusione modulata, con nove modalità e 35 parametri automatizzabili.
 
 ![Interfaccia di MultiModo-boh](assets/MultiModo-boh-interface.png)
@@ -10,23 +11,32 @@ Chorus, delay multitap e diffusione modulata, con nove modalità e 35 parametri 
 [Scarica l'ultima release](https://github.com/vallaproductionsoriginal-byte/MultiModo-boh/releases/latest).
 
 Apri la release e scarica **MultiModo-boh-mac-arm64.zip** dalla sezione **Assets**.
-Il pacchetto contiene il plugin compilato, le istruzioni e gli avvisi di licenza.
-Questo repository distribuisce il VST3 in forma binaria; il codice sorgente non è pubblicato.
+Il pacchetto contiene entrambi i formati compilati, le istruzioni e gli avvisi di licenza.
+Questo repository distribuisce VST3 e AU in forma binaria; il codice sorgente non è pubblicato.
 
 ## Installazione
 
 1. Estrai l'archivio ZIP.
-2. Copia l'intera cartella `MultiModo-boh.vst3` in `~/Library/Audio/Plug-Ins/VST3/`.
-   Crea la cartella `VST3` se non esiste.
-3. Riavvia la DAW oppure esegui una nuova scansione dei plugin VST3.
+2. Installa il formato supportato dalla tua DAW (puoi installare entrambi):
+   - **VST3:** copia l'intera cartella `MultiModo-boh.vst3` in `~/Library/Audio/Plug-Ins/VST3/`.
+   - **AU (Audio Unit):** copia l'intera cartella `MultiModo-boh.component` in `~/Library/Audio/Plug-Ins/Components/`.
+     Il bundle AU per macOS ha estensione `.component`.
+   Crea la cartella di destinazione se non esiste.
+3. Riavvia la DAW oppure esegui una nuova scansione dei plugin. Se l'AU non appare, riavvia macOS.
 
-La release richiede una DAW con supporto VST3 eseguita nativamente su Apple Silicon.
-Il bundle ha firma ad hoc locale ed è privo di notarizzazione Apple. Se macOS lo blocca
+La release richiede una DAW con supporto VST3 o AU eseguita nativamente su Apple Silicon.
+I bundle hanno firma ad hoc locale e sono privi di notarizzazione Apple. Se macOS li blocca
 dopo il download da questa release ufficiale, puoi rimuovere l'attributo di quarantena
 dal solo bundle installato, poi ripetere la scansione:
 
 ```sh
 xattr -dr com.apple.quarantine "$HOME/Library/Audio/Plug-Ins/VST3/MultiModo-boh.vst3"
+```
+
+Per il formato AU, usa il percorso del bundle `.component` installato:
+
+```sh
+xattr -dr com.apple.quarantine "$HOME/Library/Audio/Plug-Ins/Components/MultiModo-boh.component"
 ```
 
 ## Controlli

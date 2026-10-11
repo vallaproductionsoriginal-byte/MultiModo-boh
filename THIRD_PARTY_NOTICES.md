@@ -1,6 +1,6 @@
 # Third-party notices
 
-MultiModo-boh 1.0.0 — macOS Apple Silicon VST3.
+MultiModo-boh 1.0.1 — Valla Productions — macOS Apple Silicon VST3 / AU.
 
 The original portions of MultiModo-boh and its documentation are licensed under
 the MIT License in LICENSE. Third-party components retain their own copyrights
