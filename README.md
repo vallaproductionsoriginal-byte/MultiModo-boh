@@ -1,7 +1,7 @@
 # MultiModo-boh
 
 Plugin di **Valla Productions**, versione **1.0.1**.
-**VST3 e AU gratuiti per macOS 11 o successivo su Apple Silicon**.
+**VST3 gratuito per Windows x64; VST3 e AU gratuiti per macOS Apple Silicon**.
 Chorus, delay multitap e diffusione modulata, con nove modalità e 35 parametri automatizzabili.
 
 ![Interfaccia di MultiModo-boh](assets/MultiModo-boh-interface.png)
@@ -10,11 +10,28 @@ Chorus, delay multitap e diffusione modulata, con nove modalità e 35 parametri 
 
 [Scarica l'ultima release](https://github.com/vallaproductionsoriginal-byte/MultiModo-boh/releases/latest).
 
-Apri la release e scarica **MultiModo-boh-mac-arm64.zip** dalla sezione **Assets**.
-Il pacchetto contiene entrambi i formati compilati, le istruzioni e gli avvisi di licenza.
+Apri la release e scarica il pacchetto per il tuo sistema dalla sezione **Assets**:
+
+- **Windows 10/11 x64:** `MultiModo-boh-win-x64.zip`, con il plugin VST3.
+- **macOS 11 o successivo, Apple Silicon arm64:** `MultiModo-boh-mac-arm64.zip`, con VST3 e AU.
+
+I pacchetti contengono i plugin compilati, le istruzioni e gli avvisi di licenza.
+Il file `SHA256.txt` consente di verificare entrambi i download.
 Questo repository distribuisce VST3 e AU in forma binaria; il codice sorgente non è pubblicato.
 
 ## Installazione
+
+### Windows x64
+
+1. Estrai **MultiModo-boh-win-x64.zip**.
+2. Copia **l'intera cartella `MultiModo-boh.vst3`** in `C:\Program Files\Common Files\VST3\`.
+   Windows può richiedere i privilegi di amministratore per questa cartella.
+3. Riavvia la DAW a 64 bit oppure esegui una nuova scansione dei plugin VST3.
+
+Mantieni la struttura del bundle, incluso `Contents\x86_64-win\MultiModo-boh.vst3`.
+Il runtime C++ è collegato staticamente; il plugin non ha firma Authenticode.
+
+### macOS Apple Silicon
 
 1. Estrai l'archivio ZIP.
 2. Installa il formato supportato dalla tua DAW (puoi installare entrambi):
@@ -68,4 +85,4 @@ La licenza MIT del progetto non modifica le licenze dei componenti di terzi.
 ## Segnalazioni
 
 Per segnalare un problema, [apri una issue](https://github.com/vallaproductionsoriginal-byte/MultiModo-boh/issues)
-indicando versione di macOS, DAW, versione del plugin e passi per riprodurlo.
+indicando sistema operativo, DAW, versione del plugin e passi per riprodurlo.
