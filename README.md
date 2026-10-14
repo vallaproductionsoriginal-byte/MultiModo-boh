@@ -75,12 +75,12 @@ i valori nei campi sotto i knob. Lo stato viene salvato nel progetto della DAW.
 ## Licenza
 
 Le parti originali di MultiModo-boh e la documentazione sono offerte sotto
-[licenza MIT](LICENSE). Il download è gratuito.
+[licenza proprietaria](LICENSE). Il download è gratuito.
 
 JUCE 9.0.3 è utilizzato secondo i termini della licenza commerciale **JUCE Starter**.
 JUCE e gli altri componenti di terzi mantengono i propri copyright e le rispettive
 licenze, descritti in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-La licenza MIT del progetto non modifica le licenze dei componenti di terzi.
+La licenza proprietaria del progetto non modifica le licenze dei componenti di terzi.
 
 ## Segnalazioni
 

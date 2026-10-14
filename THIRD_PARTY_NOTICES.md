@@ -3,8 +3,8 @@
 MultiModo-boh 1.0.1 — Valla Productions — macOS Apple Silicon VST3 / AU.
 
 The original portions of MultiModo-boh and its documentation are licensed under
-the MIT License in LICENSE. Third-party components retain their own copyrights
-and licence terms; the project's MIT licence does not relicense those components.
+the proprietary software license in LICENSE. Third-party components retain their own copyrights
+and licence terms; the project's proprietary licence does not relicense those components.
 
 ## JUCE 9.0.3
 
@@ -13,7 +13,7 @@ Copyright (c) Raw Material Software Limited. All rights reserved.
 The publisher uses JUCE under its commercial JUCE Starter licence, subject to
 [the JUCE 9 End User Licence Agreement](https://juce.com/legal/juce-9-licence/).
 JUCE is incorporated into the compiled plugin; the JUCE framework is not offered
-under the project's MIT licence. This release distributes the compiled VST3 and AU plugins and
+under the project's proprietary licence. This release distributes the compiled VST3 and AU plugins and
 their documentation without source code.
 
 ## Other third-party components
